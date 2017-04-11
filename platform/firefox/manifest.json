@@ -1,0 +1,17 @@
+{
+
+  "manifest_version": 2,
+  "name": "2048 WebExtention",
+  "version": "0.1",
+
+  "description": "2048 in you're Browser",
+  "homepage_url": "https://github.com/TiLied/2048",
+  "icons": {
+    "32": "icon.png"
+  },
+
+  "browser_action": {
+    "default_popup": "popup.html"
+  }
+
+}

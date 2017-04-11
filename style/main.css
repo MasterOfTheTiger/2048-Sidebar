@@ -100,6 +100,14 @@ p {
   margin-bottom: 10px;
   line-height: 1.65; }
 
+    p.about {
+        margin-top: 0;
+        margin-bottom: 0;
+        line-height: 1.65;
+        font-size: 12px;
+        font-style: italic;
+    }
+
 a {
   color: #776e65;
   font-weight: bold;
@@ -112,8 +120,8 @@ strong.important {
 hr {
   border: none;
   border-bottom: 1px solid #d8d4d0;
-  margin-top: 20px;
-  margin-bottom: 30px; }
+  margin-top: 5px;
+  margin-bottom: 15px; }
 
 .container {
   width: 500px;
@@ -531,14 +539,14 @@ hr {
   float: right; }
 
 .game-explanation {
-  margin-top: 50px; }
+  margin-top: 20px; }
 
 @media screen and (max-width: 520px) {
   html, body {
     font-size: 15px; }
 
   body {
-    margin: 20px 0;
+    margin: 5px 0;
     padding: 0 20px; }
 
   h1.title {
@@ -571,7 +579,7 @@ hr {
     margin-top: 2px; }
 
   .game-container {
-    margin-top: 17px;
+    margin-top: 10px;
     position: relative;
     padding: 10px;
     cursor: default;
