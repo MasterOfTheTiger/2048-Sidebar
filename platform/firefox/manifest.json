@@ -1,16 +1,22 @@
 {
 
   "manifest_version": 2,
-  "name": "2048 WebExtention",
-  "version": "0.1",
+  "name": "2048 WebExtension",
+  "version": "0.2",
 
-  "description": "2048 in you're Browser",
-  "homepage_url": "https://github.com/TiLied/2048",
+  "description": "2048 in your Browser",
+  "homepage_url": "https://github.com/TiLied/2048-WebExtension",
   "icons": {
-    "32": "icon.png"
+    "152": "img/apple-touch-icon.png"
   },
 
+  "author": "TiLied",
+
   "browser_action": {
+    "default_icon": {
+            "32": "icon.png"
+        },
+    "default_title": "2048",
     "default_popup": "popup.html"
   }
 
