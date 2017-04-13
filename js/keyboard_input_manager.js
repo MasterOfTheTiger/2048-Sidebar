@@ -98,32 +98,72 @@ KeyboardInputManager.prototype.listen = function () {
     event.preventDefault();
   });
 
-  gameContainer.addEventListener(this.eventTouchend, function (event) {
-    if ((!window.navigator.msPointerEnabled && event.touches.length > 0) ||
-        event.targetTouches.length > 0) {
-      return; // Ignore if still touching with one or more fingers
-    }
+  gameContainer.addEventListener(this.eventTouchend, function (event)
+  {
+      if ((!window.navigator.msPointerEnabled && event.touches.length > 0) ||
+          event.targetTouches.length > 0)
+      {
+          return; // Ignore if still touching with one or more fingers
+      }
 
-    var touchEndClientX, touchEndClientY;
+      var touchEndClientX, touchEndClientY;
 
-    if (window.navigator.msPointerEnabled) {
-      touchEndClientX = event.pageX;
-      touchEndClientY = event.pageY;
-    } else {
-      touchEndClientX = event.changedTouches[0].clientX;
-      touchEndClientY = event.changedTouches[0].clientY;
-    }
+      if (window.navigator.msPointerEnabled)
+      {
+          touchEndClientX = event.pageX;
+          touchEndClientY = event.pageY;
+      } else
+      {
+          touchEndClientX = event.changedTouches[0].clientX;
+          touchEndClientY = event.changedTouches[0].clientY;
+      }
 
-    var dx = touchEndClientX - touchStartClientX;
-    var absDx = Math.abs(dx);
+      var dx = touchEndClientX - touchStartClientX;
+      var absDx = Math.abs(dx);
 
-    var dy = touchEndClientY - touchStartClientY;
-    var absDy = Math.abs(dy);
+      var dy = touchEndClientY - touchStartClientY;
+      var absDy = Math.abs(dy);
 
-    if (Math.max(absDx, absDy) > 10) {
-      // (right : left) : (down : up)
-      self.emit("move", absDx > absDy ? (dx > 0 ? 1 : 3) : (dy > 0 ? 2 : 0));
-    }
+      if (Math.max(absDx, absDy) > 10)
+      {
+          // (right : left) : (down : up)
+          self.emit("move", absDx > absDy ? (dx > 0 ? 1 : 3) : (dy > 0 ? 2 : 0));
+      }
+
+  });
+
+    // Respond to mouse events
+    var mouseStartClientX, mouseStartClientY;
+    var gameContainer = document.getElementsByClassName("game-container")[0];
+
+    gameContainer.addEventListener("mousedown", function (event) {
+        mouseStartClientX = event.pageX;
+        mouseStartClientY = event.pageY;
+        event.preventDefault();
+    });
+
+    gameContainer.addEventListener("mousemove", function (event) {
+        event.preventDefault();
+    });
+
+    gameContainer.addEventListener("mouseup", function (event)
+    {
+
+        var mouseEndClientX, mouseEndClientY;
+
+        mouseEndClientX = event.pageX;
+        mouseEndClientY = event.pageY;
+
+        var dx = mouseEndClientX - mouseStartClientX;
+        var absDx = Math.abs(dx);
+
+        var dy = mouseEndClientY - mouseStartClientY;
+        var absDy = Math.abs(dy);
+
+        if (Math.max(absDx, absDy) > 10) {
+            // (right : left) : (down : up)
+            self.emit("move", absDx > absDy ? (dx > 0 ? 1 : 3) : (dy > 0 ? 2 : 0));
+        }
   });
 };
 
