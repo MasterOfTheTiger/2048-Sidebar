@@ -1,6 +1,6 @@
 # 2048
 
-[Forked from](https://github.com/gabrielecirulli/2048)
+forked from [2048](https://github.com/gabrielecirulli/2048)
 
 ### Screenshot
 
