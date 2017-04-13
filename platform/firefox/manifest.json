@@ -2,7 +2,7 @@
 
   "manifest_version": 2,
   "name": "2048 WebExtension",
-  "version": "0.2",
+  "version": "0.3",
 
   "description": "Play 2048 in your Browser",
   "homepage_url": "https://github.com/TiLied/2048-WebExtension",
