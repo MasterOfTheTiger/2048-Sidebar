@@ -7,7 +7,7 @@
   "description": "Play 2048 in your Browser",
   "homepage_url": "https://github.com/TiLied/2048-WebExtension",
   "icons": {
-    "152": "img/apple-touch-icon.png"
+    "152": "meta/apple-touch-icon.png"
   },
 
   "author": "TiLied",
