@@ -1,5 +1,8 @@
 # 2048
 
+### Download
+[Firefox AMO](https://addons.mozilla.org/en-US/firefox/addon/2048-webextension/)
+
 Forked from [2048](https://github.com/gabrielecirulli/2048)
 
 ### Screenshot
