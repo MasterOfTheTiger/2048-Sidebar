@@ -1,9 +1,8 @@
 # 2048
 
-### Download
-[Firefox AMO](https://addons.mozilla.org/en-US/firefox/addon/2048-webextension/)
+This is going to be a 2048 sidebar extension for Firefox. 
 
-Forked from [2048](https://github.com/gabrielecirulli/2048)
+Forked from [2048 Web Extension](https://github.com/TiLied/2048-WebExtension)
 
 ### Screenshot
 
