@@ -1,8 +1,8 @@
 {
 
   "manifest_version": 2,
-  "name": "2048 WebExtension Sidebar",
-  "version": "0.3",
+  "name": "2048 Sidebar",
+  "version": "1.0",
 
   "description": "Play 2048 in your Browser as a Sidebar",
   "homepage_url": "https://github.com/MasterOfTheTiger/2048-WebExtension",
@@ -17,7 +17,6 @@
             "32": "icon.png"
         },
     "default_title": "2048",
-    "default_popup": "popup.html"
   },
   "sidebar_action": {
   "default_title": "2048 Sidebar",
