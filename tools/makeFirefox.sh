@@ -16,6 +16,7 @@ cp -R ../style/								$DES/
 cp    ../LICENSE.txt                        $DES/
 cp    ../platform/firefox/manifest.json     $DES/
 cp    ../favicon.ico						$DES/icon.png
+cp    ../sidebar.html						$DES/
 
 if [ "$1" = b ]; then
     echo "*** 2048.firefox: Creating package..."
