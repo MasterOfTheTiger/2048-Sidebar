@@ -2,6 +2,8 @@
 
 This is a 2048 sidebar extension for Firefox.
 
+Get it on [Firefox Addons](https://addons.mozilla.org/en-US/firefox/addon/2048-webextension-sidebar/). Please download and review it if you would like to try it out.
+
 Forked from [2048 Web Extension](https://github.com/TiLied/2048-WebExtension)
 
 Which was based itself from the original [2048](https://github.com/gabrielecirulli/2048)
