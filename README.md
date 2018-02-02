@@ -1,8 +1,10 @@
 # 2048
 
-This is going to be a 2048 sidebar extension for Firefox. 
+This is a 2048 sidebar extension for Firefox.
 
 Forked from [2048 Web Extension](https://github.com/TiLied/2048-WebExtension)
+
+Which was based itself from the original [2048](https://github.com/gabrielecirulli/2048)
 
 ### Screenshot
 
