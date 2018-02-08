@@ -18,7 +18,6 @@
             "32": "icon.png"
         },
     "default_title": "2048",
-    "default_popup": "popup.html"
   },
   "sidebar_action": {
   "default_title": "2048 Sidebar",
